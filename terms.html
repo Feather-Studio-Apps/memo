@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>memo. — Terms of Use</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FFFFFF;
+  --surface: rgba(255, 255, 255, 0.65);
+  --border: rgba(0, 0, 0, 0.08);
+  --text: #141414;
+  --text-secondary: #6B6B6B;
+  --accent: #3B82F6;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0A0A0A;
+    --surface: rgba(24, 24, 24, 0.65);
+    --border: rgba(255, 255, 255, 0.1);
+    --text: #F2F2F0;
+    --text-secondary: #9A9A9A;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+.wordmark {
+  font-family: Baskerville, 'Baskerville Old Face', Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+}
+nav.pill {
+  position: sticky;
+  top: 20px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  width: fit-content;
+  margin: 20px auto 0;
+  padding: 6px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+nav.pill a {
+  padding: 8px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 0.15s ease;
+}
+nav.pill a.current { color: var(--text); }
+nav.pill a:hover { color: var(--text); }
+a:focus-visible, nav.pill a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 64px 24px 96px;
+}
+header.hero { text-align: center; margin-bottom: 56px; }
+header.hero .wordmark { font-size: 48px; display: block; margin-bottom: 6px; }
+header.hero p { color: var(--text-secondary); font-size: 15px; margin: 0; }
+h1 { font-size: 27px; font-weight: 700; margin: 0 0 8px; }
+.updated { color: var(--text-secondary); font-size: 14px; margin: 0 0 40px; }
+h2 { font-size: 19px; font-weight: 700; margin: 40px 0 12px; }
+p { margin: 0 0 16px; }
+ul { margin: 0 0 16px; padding-left: 20px; }
+li { margin-bottom: 8px; }
+a { color: var(--accent); }
+footer {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 13px;
+  padding: 32px 24px 64px;
+}
+footer a { color: var(--text-secondary); text-decoration: underline; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  nav.pill a { transition: none; }
+}
+@media (max-width: 420px) {
+  header.hero .wordmark { font-size: 40px; }
+  h1 { font-size: 23px; }
+}
+</style>
+</head>
+<body>
+<nav class="pill">
+  <a href="privacy.html">Privacy</a>
+  <a href="terms.html" class="current">Terms</a>
+  <a href="support.html">Support</a>
+</nav>
+<main>
+  <header class="hero">
+    <span class="wordmark">memo.</span>
+    <p>Terms of Use</p>
+  </header>
+
+  <h1>Terms of Use</h1>
+  <p class="updated">Last updated: September 2026</p>
+
+  <p>These terms apply to your use of memo., built by Feather Studio. By downloading or using memo., you agree to these terms.</p>
+
+  <h2>License</h2>
+  <p>Feather Studio grants you a personal, non-transferable license to use memo. on devices you own or control, for personal, non-commercial purposes, subject to the App Store's terms of service.</p>
+
+  <h2>Your content</h2>
+  <p>You own everything you create in memo. — your notes, folders, tags, and voice recordings. We don't claim any rights to your content, and since it's stored locally (and, if you enable it, in your own iCloud account), we don't have access to it.</p>
+
+  <h2>Pro purchase</h2>
+  <p>memo. Pro is a one-time, non-consumable in-app purchase that unlocks live voice transcription and iCloud Sync. It's processed through Apple's App Store, and Apple's standard refund and purchase policies apply. If you've purchased Pro before, you can restore it on a new device from Settings.</p>
+
+  <h2>Acceptable use</h2>
+  <p>You agree not to use memo. for anything unlawful, or in a way that attempts to disrupt or reverse-engineer the app beyond what's permitted by applicable law.</p>
+
+  <h2>No warranty</h2>
+  <p>memo. is provided "as is," without warranties of any kind, express or implied. We don't guarantee the app will be uninterrupted, error-free, or fit for any particular purpose.</p>
+
+  <h2>Limitation of liability</h2>
+  <p>To the fullest extent permitted by law, Feather Studio is not liable for any indirect, incidental, or consequential damages arising from your use of memo., including loss of data. We'd encourage backing up anything important — enabling iCloud Sync is the simplest way to do that.</p>
+
+  <h2>Apple's standard terms</h2>
+  <p>These Terms are between you and Feather Studio, not Apple. Apple has no obligation to provide support for memo., and Apple's <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Standard End User License Agreement</a> applies in addition to these Terms.</p>
+
+  <h2>Termination</h2>
+  <p>We may suspend or discontinue memo. at any time. Since your data is stored locally and in your own iCloud account, discontinuing the app doesn't affect your ability to access your existing notes through your device or iCloud.</p>
+
+  <h2>Changes to these terms</h2>
+  <p>We may update these Terms from time to time. Continuing to use memo. after a change means you accept the updated Terms.</p>
+
+  <h2>Governing law</h2>
+  <p>These Terms are governed by the laws of Ontario, Canada, without regard to conflict-of-law principles.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about these Terms can be sent to <a href="mailto:featherstudio@proton.me">featherstudio@proton.me</a>.</p>
+</main>
+<footer>
+  Feather Studio · <a href="https://darenirlen.vercel.app/work/memo">memo.</a>
+</footer>
+</body>
+</html>

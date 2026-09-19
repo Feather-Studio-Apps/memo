@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>memo. — Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FFFFFF;
+  --surface: rgba(255, 255, 255, 0.65);
+  --border: rgba(0, 0, 0, 0.08);
+  --text: #141414;
+  --text-secondary: #6B6B6B;
+  --accent: #3B82F6;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0A0A0A;
+    --surface: rgba(24, 24, 24, 0.65);
+    --border: rgba(255, 255, 255, 0.1);
+    --text: #F2F2F0;
+    --text-secondary: #9A9A9A;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+.wordmark {
+  font-family: Baskerville, 'Baskerville Old Face', Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+}
+nav.pill {
+  position: sticky;
+  top: 20px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  width: fit-content;
+  margin: 20px auto 0;
+  padding: 6px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+nav.pill a {
+  padding: 8px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 0.15s ease;
+}
+nav.pill a.current { color: var(--text); }
+nav.pill a:hover { color: var(--text); }
+a:focus-visible, nav.pill a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 64px 24px 96px;
+}
+header.hero { text-align: center; margin-bottom: 56px; }
+header.hero .wordmark { font-size: 48px; display: block; margin-bottom: 6px; }
+header.hero p { color: var(--text-secondary); font-size: 15px; margin: 0; }
+h1 { font-size: 27px; font-weight: 700; margin: 0 0 8px; }
+.updated { color: var(--text-secondary); font-size: 14px; margin: 0 0 40px; }
+h2 { font-size: 19px; font-weight: 700; margin: 40px 0 12px; }
+p { margin: 0 0 16px; }
+ul { margin: 0 0 16px; padding-left: 20px; }
+li { margin-bottom: 8px; }
+a { color: var(--accent); }
+.faq-item { margin-bottom: 36px; }
+.faq-item h2 { margin-top: 0; font-size: 17px; }
+footer {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 13px;
+  padding: 32px 24px 64px;
+}
+footer a { color: var(--text-secondary); text-decoration: underline; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  nav.pill a { transition: none; }
+}
+@media (max-width: 420px) {
+  header.hero .wordmark { font-size: 40px; }
+  h1 { font-size: 23px; }
+}
+</style>
+</head>
+<body>
+<nav class="pill">
+  <a href="privacy.html">Privacy</a>
+  <a href="terms.html">Terms</a>
+  <a href="support.html" class="current">Support</a>
+</nav>
+<main>
+  <header class="hero">
+    <span class="wordmark">memo.</span>
+    <p>Support</p>
+  </header>
+
+  <h1>Frequently asked questions</h1>
+  <p class="updated">&nbsp;</p>
+
+  <div class="faq-item">
+    <h2>What is memo.?</h2>
+    <p>memo. is a simple notes app — write or dictate quick notes, journal entries, or longer-form writing, and keep them organized with folders and tags.</p>
+  </div>
+
+  <div class="faq-item">
+    <h2>Do I need an account?</h2>
+    <p>No. memo. works fully offline with no sign-up. Turning on iCloud Sync (a Pro feature) uses your own iCloud account — there's no separate memo. account to create.</p>
+  </div>
+
+  <div class="faq-item">
+    <h2>How do I create a note?</h2>
+    <p>Tap the <strong>+</strong> button on the Notes tab. You can write directly, or tap the mic to dictate — text and voice both work in the same note.</p>
+  </div>
+
+  <div class="faq-item">
+    <h2>What's free, and what's Pro?</h2>
+    <p>Writing notes, recording voice memos, folders, tags, formatting (bold, bullets, checklists, photos), and both grid and list views are all free, with no limits. memo. Pro is a one-time purchase that unlocks <strong>live voice transcription</strong> (your dictation turned into text as you speak) and <strong>iCloud Sync</strong> across your devices.</p>
+  </div>
+
+  <div class="faq-item">
+    <h2>I bought Pro already — how do I get it on a new device?</h2>
+    <p>Open Settings and tap <strong>Restore Purchases</strong>. Since Pro is tied to your Apple ID, it'll unlock automatically on any device signed into the same account.</p>
+  </div>
+
+  <div class="faq-item">
+    <h2>Where are my notes stored?</h2>
+    <p>On your device, always. If you turn on iCloud Sync, they're also stored in your own private iCloud account, which is how they stay in sync across your devices.</p>
+  </div>
+
+  <div class="faq-item">
+    <h2>How do folders and tags work?</h2>
+    <p>A note can live in one folder, and carry as many tags as you like. Folders are managed on the Folders tab; tags are created and edited in Settings, and applied to a note from its own tag menu.</p>
+  </div>
+
+  <div class="faq-item">
+    <h2>I deleted a note by mistake — can I get it back?</h2>
+    <p>Yes. Deleted notes go to Recently Deleted (in Settings) and stay there for 10 days before being permanently removed, giving you time to restore them.</p>
+  </div>
+
+  <div class="faq-item">
+    <h2>Does memo. show ads or track me?</h2>
+    <p>No. memo. has no ads and no third-party tracking. See the <a href="privacy.html">Privacy Policy</a> for the full detail.</p>
+  </div>
+
+  <div class="faq-item">
+    <h2>Something's not working — how do I reach you?</h2>
+    <p>Email <a href="mailto:featherstudio@proton.me?subject=Feedback%20Memo.">featherstudio@proton.me</a> — we read every message.</p>
+  </div>
+</main>
+<footer>
+  Feather Studio · <a href="https://darenirlen.vercel.app/work/memo">memo.</a>
+</footer>
+</body>
+</html>
